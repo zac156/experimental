@@ -5,7 +5,6 @@ def fib(index, seq=None):
         return seq[-1]
 
     seq.append(seq[-2] + seq[-1])
-    index = index - 1
-    return fib(index, seq)
+    return fib(index - 1, seq)
 
 print(fib(7))
